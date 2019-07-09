@@ -1,29 +1,24 @@
 # RD2L
 RD2L Cet-Sun Season 17 team review
 
-I made a website for the season review but if you don't want to click it here is the text version.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Above is the website version of the season review but if you don't want to click it here is the text verion:
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 -------------- Intro
 

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>the other Mango</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet"> 
+
+	<link rel="icon" type="image/x-icon" href="https://i.imgur.com/XkE0kEr.png" /><!-- favicon -->
+
+	<style type="text/css">
+		body {
+			padding: 0px;
+			margin: 0px;
+			overflow-x: hidden;
+			border: none;
+			text-shadow: 2px 2px rgba(0,0,0,0.2);
+		}
+		#Mycontainer {
+			height: 100%;
+			width: 100%;
+			background-image: url("http://3.bp.blogspot.com/-zWJsi6xpS-M/T4NS8dHTENI/AAAAAAAAAEI/5XGXR5iw78s/s1600/goshala_24.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			height: 100%;
+			width: 100%;
+			border: 1px black solid;
+			overflow: hidden;
+		}
+		.playerImage {
+			width: 40%;
+			height: auto;
+			border: 1px black solid;
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin-right: 15px;
+			box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+		}
+		.boxes {
+			font-size: 22px;
+			font-family:'DM Sans' Sans-serif;
+			padding: 5px;
+			color: rgb(255,255,255);
+			padding-bottom: 40px;
+		}
+		.container {
+			background-color: rgba(70,140,113,0.75);
+			border: 1px black solid;
+			box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+			background-image: url(https://i.imgur.com/nXkH2AR.png);
+		}
+		.iframe {
+			height: 100%;
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 60px;
+			color: rgb(255,255,120);
+			text-shadow: 4px 4px #000000;
+			font-family: 'Literata', serif;
+		}
+		h2 {
+			font-size: 40px;
+			color: rgb(255,255,120);
+			text-shadow: 4px 4px #000000;
+			font-family: 'Literata', serif;
+		}
+
+		.also {width: 100%;}
+		.thx {
+			margin: 2px;
+			width: 100px;
+			height: 100px;
+			box-shadow: 6px 6px 3px rgba(0,0,0,0.4);
+			border: 1px black solid;
+		}
+		.thankstext {text-align: center;}
+		.homemadeoffset {height: 70px;}
+		.titel {text-align: center;}
+		.yellow{color: rgb(255,230,0);}
+
+		nav {width: 500px;}
+		ul {border: 1px white solid;}
+		li {display: block;}
+		ul.nav-pills {
+		  	top: 20px;
+		  	position: fixed;
+		  	background-color: rgba(0,0,0,70%);
+		}
+
+		.quickselect {
+			font-size: 20px;
+		}
+
+		.videoDiv {
+			height: 600px;
+			margin: auto;
+		}
+
+		@media only screen and (max-width: 1500px) {
+			nav {
+				display: none;
+			}
+			.videoDiv {
+				height: 500px;
+		    }
+		}
+
+		@media only screen and (max-width: 1100px) {
+			.videoDiv {
+				height: 400px;
+		    }
+		}
+
+		@media only screen and (max-width: 750px) {
+			.videoDiv {
+				height: 300px;
+		    }
+		}
+
+		.dazza {
+			font-size: 12px;
+			opacity: 0.7;
+		}
+
+		.dotabuff {text-shadow: 1px 1px #000000;}
+		.dotabuff:hover {
+			text-decoration: none;
+		}
+
+		.text-white {
+			font-size: 45px;
+			position: relative;
+			top: -5px;
+		}
+		.teamname {
+			position: relative;
+			top: -10px;
+		}
+		.mango {
+			position: relative;
+			float: right;
+			width: 48px;
+			right: 10px;
+			bottom: 10px;
+		}
+		a {color: rgb(120,200,255);}
+		a:hover {color: rgb(255,255,120);}
+
+		.topOfThePage {margin-top: -20px;}
+	</style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<div id="Mycontainer">
+		
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4 topOfThePage" id="section0"></div>		
+		</div>
+
+		<nav class="col-sm-3 col-4 text-muted" id="myScrollspy"> 
+		    <ul class="nav nav-pills flex-column">
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section0">Intro</a>
+			    	</li>
+		    	</button>
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section2">Kevin</a>
+			    	</li>
+		    	</button>
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section4">Bucketbaba</a>
+			    	</li>
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section3">icOn♥/A</a>
+			    	</li>
+		    	</button>
+		    	</button>
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section1">Anstar</a>
+			    	</li>
+		    	</button>
+		    	<button class="btn">
+			    	<li class="nav-item">
+			    	    <a class="nav-link quickselect" href="#section5">Thanks to</a>
+			    	</li>
+		    	</button>
+		    </ul>
+		</nav>
+
+		<div class="container"> 						<!-- Intro -->
+			<div class="row justify-content-md-center">
+				<h1 class="titel"><span class="text-white">Season review of</span> <br> <span class="teamname">“I hope the Indians carry us”</span> </h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-11 boxes">
+					<img class="playerImage" src="https://i.imgur.com/avroUcT.png">
+					This was my first time playing RD2L and this is my attempt at a season review of my sunday team 
+					"I hope the Indians carry us". I decided to do a website because I saw that one guy <span class="dazza">Dazza</span> do it and I thought it <nobr>was cool.</nobr>
+					<br><br> 
+					I had a lot of fun playing in this team, it was a chill enviroment where everyone still wanted to win. We didn't manage to pull off any scrims, but we still managed to get top 4 in the playoffs so I'm happy with how everything went (considering I got kicked out first round on wednesday). I can't say for myself but I don't think anyone on the <nobr>team was toxic.</nobr>
+					<br><br>
+					Since it's pretty common I'm gonna do a review of myself but I'll let it <nobr>be quick:</nobr>
+					<br><br>
+					I found out pretty quickly that I wasn't as good at playing safelane carry as I had originally thought. I don't think I played carry that bad, but considering my sheet mmr which coincidentally turned out to be my peak mmr (~5450) I think I underperformed and had I played a safelane carry at that level we would have had a better shot at reaching the finals but it is what it is and I will keep spamming rubick in my <nobr>pubs regardless ㋡.</nobr>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4" id="section2"></div>		
+		</div>
+
+		<div class="container"> 						<!-- Kevin -->
+			<div class="row justify-content-md-center">
+				<h1>Kevin Richardson</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-11 boxes">
+					<img class="playerImage" src="https://i.imgur.com/GklVUL0.jpg">
+					<a href="https://www.dotabuff.com/players/50173594" class="dotabuff">Kevin</a> is acutally not the person in the picture but he was our offlaner who ended the season <nobr>with divine.</nobr> 
+					<br><br>
+					It felt like his heropool was kind of small (same for me) but I believe
+					that could be attributed to the fact that we didn't do any scrims. When kevin got his pango or centaur(prenerf) he would absolutely demolish the enemy team leading to some quick respect bans from<nobr> our opponents.</nobr>
+					 <br><br>
+					Normally you wouldn't expect too big of an impact from your offlane
+					if they get trilaned, right? but this guy somehow ends up 13-3 as a pangolier and the second highest networth in the game against <nobr>a bloodseeker</nobr>
+					<br><br>
+					Kevin is done with teammates throwing his games so now he carries them from the offlane, but don't pick him with 2 other greedy cores as he plays on the greedier side. Would want to play with <nobr>him again.</nobr>
+				</div>
+			</div>
+			<div class="row justify-content-md-center ">
+				<div class="col-sm-11 boxes videoDiv">
+					<iframe allowfullscreen  class="iframe" src="https://www.youtube.com/embed/WJx6aAZF3MM"></iframe>
+				</div>
+			</div>
+			<div class="row justify-content-md-center ">
+				<div class="col-sm-11 boxes">
+					also Kevin in the same game:<br>
+					<img class="also" src="https://i.imgur.com/pugqB2U.png"><br>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4" id="section4"></div>		
+		</div>
+
+		<div class="container"> 						<!-- Bucketbaba -->
+			<div class="row justify-content-md-center">
+				<h1>Bucketbaba</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-11 boxes">
+					<img class="playerImage" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/42/42198bbff395d2177421808a861a5e0b8f3a6537_full.jpg">
+					 <a href="https://www.dotabuff.com/players/177234209" class="dotabuff">Bucketbaba</a> is a low legend and he was my laning partner for practically the whole season. Considering his mmr I would say that bucket is a little less value  but still one of the best laning partners I could have hoped for. He would ocasssionally fuck up which was expected but playing with him was <nobr>very enjoyable.</nobr>
+					 <br><br> 
+					 Whenever I laned with him he instantly responded if I told him to do anything this led to the enemy offlaner not being able to abuse him. When I fucked up or anyone else on the team made a mistake he would never flame, and whenever we had a tough game and our captain got stressed out he would take the verbal abuse from our captain without <nobr>any complaints :^) . </nobr>
+					<br><br>
+					Very chill, wouldn't mind playing with him again if he would change internet provider.
+				</div>
+			</div>
+			<div class="row justify-content-md-center ">
+				<div class="col-sm-11 boxes videoDiv">
+					<iframe allowfullscreen  class="iframe" src="https://www.youtube.com/embed/aI0NkWXZB-o"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4" id="section3"></div>		
+		</div>
+
+		<div class="container"> 						<!-- Icon -->
+			<div class="row justify-content-md-center">
+				<h1>icOn♥/A/</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-11 boxes">
+					<img class="playerImage" src="https://cdn.gamer-network.net/2019/usgamer/hollow-knight-hornet.jpg">
+					 If Indians were pokemon <a href="https://www.dotabuff.com/players/97590624" class="dotabuff">Icon</a>  would be the third evolution Bucketbabababa in <nobr>the Baba tree:</nobr>
+					 <br><br>
+					 bucketbaba < dark eagle < Icon and Mandy being the final evolution Bucketbababababa where every evolution would successively gain a slightly better internet provider, <nobr>PC and MMR.</nobr>
+					<br><br> 
+					I think he played ok for his mmr but unfortunately he wasn't able to play in the playoffs, despite that he cheered us on in the discord and flamed our opponents for trying to rig matches <nobr>against us.</nobr> 
+
+					<br><br>Would play with him again if he was able to play <nobr>his games :P.</nobr>
+				</div>
+			</div>
+			<div class="row justify-content-md-center ">
+				<div class="col-sm-11 boxes videoDiv">
+					Turn on audio if you like shitty memes
+					<iframe allowfullscreen  class="iframe" src="https://www.youtube.com/embed/06ZvEc3n0js"></iframe>
+					<br>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4" id="section1"></div>		
+		</div>
+
+		<div class="container"> 						<!-- Anstar -->
+			<div class="row justify-content-md-center">
+				<h1>Anstar</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-11 boxes">
+					<img class="playerImage" src="https://i.redd.it/2bhw2hl7es131.png">
+					<a href="https://www.dotabuff.com/players/46629468" class="dotabuff">Anstar</a>  was our, captain, divine 5, weeb who only plays party queue and watches tournaments. Of what I remember he usually went even in lane even versus higher mmr players, but every now and then he would go on a killing spree. If he felt the game was getting too easy after killing their mid three times he would even it out by dying three times <nobr>in a row</nobr>.
+					<br><br>
+					Anstars drafting was quite interesting, he wasn't afraid to pick unorthodox heroes like a safelane doom(which worked for his wed team) or a safelane bristle which I could have pulled off had I not fed. In general I feel like he is a good drafter who was put in a position where he had very limited options on what he could pick for us, that's partly on me since I don't know my own hero pool.
+					Generally he wanted to play a fast-paced game, but he wasn't hesitant to pull out a sneaky windranger or storm <nobr> last pick. </nobr>
+					<br><br>
+					Since Anstar told me he is going to write a season review I'm going to leave most of the flaming to him, but
+					this is my opinion of Anstar as a DotA player. As he only plays party queue he lacks in what he would learn from playing a lot of solo queue games, but makes up for it with game knowledge. Other than that I think he is an all around solid player, but keep in mind that hitting creeps will bore him. <nobr> Also a shotcaller.</nobr>
+					<br><br>
+					After we got kicked out of the playoffs and the team atmosphere was a bit sour (understandably) he was still up to play a game of Dota underlords, despite that he is still a competetive player who would have loved to get that <span class="yellow">yellow discord name</span>. Overall enjoyable captain and talking to him about DotA or his awful sleeping habits <nobr>was fun 😘.</nobr>
+					<br><br>
+					Biggest Idol: Envy. Going to maxbid him <nobr>this mini.</nobr>
+				</div>
+			</div>
+			<div class="row justify-content-md-center ">
+				<div class="col-sm-11 boxes videoDiv">
+					<iframe allowfullscreen  class="iframe" src="https://www.youtube.com/embed/0OJuIc1uMMs"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="homemadeoffset col-sm-4" id="section5"></div>		
+		</div>
+
+		<div class="container"> 						<!-- Stand ins -->
+			<div class="row justify-content-md-center">
+				<h1>Special thanks to</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm-5 boxes">
+					<img class="thx" src="https://i.pinimg.com/236x/b1/1c/f9/b11cf99ca21698381c78452d1ea35416.jpg"> <a class="dotabuff" href="https://www.dotabuff.com/players/206151958">Waloo</a> <br><br>
+					<img class="thx" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a1/a19b57d4a34ebea71b2125c38ed14a555f877329_full.jpg"> <a class="dotabuff" href="https://www.dotabuff.com/players/331379592">Dark Eagle</a> <br>
+				</div>
+				<div class="col-sm-5 boxes">
+					<img class="thx" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/04/04eaa3292a31cc9b5361dce10dbe57fdc1f825b8_full.jpg"> <a class="dotabuff" href="https://www.dotabuff.com/players/34034828">Rinta</a> <br>
+					<br>
+					<img class="thx" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/96ef99d0640949e962751d881b7c36e4cf4a874e_full.jpg"> <a class="dotabuff" href="https://www.dotabuff.com/players/90016440">冰人 (L)</a> (this guy?)<br>
+				</div>
+				<div class="col-sm-10 boxes">
+					<img class="thx" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/47/478410e0fdacc1b63d59a3c862db3ac0064c10b6_full.jpg"> <a class="dotabuff" href="https://www.dotabuff.com/players/76964834">Oxygen</a> <br>
+				</div>
+				<div class="col-sm-6 boxes thankstext">
+					For standing in when everyone wasn't available and to all the people who organized this, also sorry if I <nobr>forgot anyone</nobr>. 
+					<br><br>
+					<span class="dazza">I should probably have spent more time on text and less <nobr>on code ^^.</nobr></span>
+				</div>
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br><br>
+		<img class="mango" src="https://i.imgur.com/XkE0kEr.png">
+	</div>
+</body>
+</html>
